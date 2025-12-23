@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia Marcelino Jimenez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="vanta-fog"></div>
+    
+    <div class="noise-overlay"></div>
+
+    <div class="main-container">
+        
+        <div class="cozy-card" data-tilt>
+            
+            <div class="profile-wrapper">
+                <img src="mifoto.jpeg" alt="Marcelino">
+            </div>
+
+            <div class="header-info">
+                <span class="tagline">Diseñador Fullstack Jr.</span>
+                <h1>Marcelino Jimenez</h1>
+                <p class="bio">
+                    Ingeniero en informatica. Enfoque en creacion de APIS.
+                </p>
+            </div>
+
+            <div class="menu-links">
+                
+                <a href="https://portafoliobymarceclark17.netlify.app" class="kraft-btn featured" target="_blank">
+                    <div class="btn-content">
+                        <span class="icon-box"><i class="fas fa-mug-hot"></i></span>
+                        <div class="text-box">
+                            <h3>Ver Portafolio</h3>
+                            <p>Experiencia & Proyectos</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-arrow-right arrow"></i>
+                </a>
+
+                <a href="https://github.com/DevBymarceeClark17" class="kraft-btn" target="_blank">
+                    <i class="fab fa-github"></i> <span>GitHub</span>
+                </a>
+
+                <a href="www.linkedin.com/in/jimenez-soto-marcelino-17791539b" class="kraft-btn" target="_blank">
+                    <i class="fab fa-linkedin-in"></i> <span>LinkedIn</span>
+                </a>
+
+               <div class="row-icons">
+    <a href="https://www.instagram.com/rmi_greyrat17?igsh=MWJwOGxyemUxN2RqMQ==" class="icon-square" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    
+    <a href="jimenezsotomarcelino@gmail.com" class="icon-square" target="_blank">
+        <i class="fas fa-envelope"></i>
+    </a>
+</div>
+
+            </div>
+            
+            <div class="cv-container">
+                <a href="./mi-cv.pdf" download class="cv-link">
+                    <i class="fas fa-file-pdf"></i> Descargar Resumen (CV)
+                </a>
+            </div>
+            
+            <div class="footer-sign">
+                Copyright © 2025 Marcelino Jimenez Soto
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+    <script>
+        // CONFIGURACIÓN CHIDO 2 (MOCHA FOG)
+        VANTA.FOG({
+            el: "#vanta-fog",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            highlightColor: 0xffe0b2, // Espuma clara
+            midtoneColor: 0x9e8c81,   // Tostado medio
+            lowlightColor: 0x5d4037,  // Café oscuro
+            baseColor: 0x9e8c81,
+            blurFactor: 0.6,
+            speed: 1.50,
+            zoom: 1.20
+        })
+
+        VanillaTilt.init(document.querySelector(".cozy-card"), {
+            max: 3, speed: 1000, glare: true, "max-glare": 0.1, scale: 1.00
+        });
+    </script>
+</body>
+</html>
