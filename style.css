@@ -167,3 +167,16 @@ h1 { font-family: 'Merriweather', serif; font-size: 2.2rem; font-weight: 900; co
 @keyframes slideUpFade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes cascadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fadeIn { to { opacity: 1; } }
+
+/* --- OPTIMIZACIÓN MÓVIL EXTREMA --- */
+@media (max-width: 768px) {
+    /* Ocultamos el canvas de la animación */
+    #vanta-fog canvas {
+        opacity: 0 !important;
+    }
+    
+    /* Ponemos un fondo estático bonito en su lugar */
+    #vanta-fog {
+        background: linear-gradient(135deg, var(--bg-latte), var(--coffee-med));
+    }
+}
